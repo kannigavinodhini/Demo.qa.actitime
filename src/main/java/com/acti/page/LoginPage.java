@@ -1,5 +1,14 @@
 package com.acti.page;
 
-public class LoginPage {
+import com.acti.base.DriverScript;
+
+public class LoginPage extends DriverScript 
+{
+@BeforeMethod
+public void precondition()
+{
+initBrowse();
+
+}
 
 }

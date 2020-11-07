@@ -1,5 +1,7 @@
 package com.acti.page;
 
-public class ReportsPage {
+import com.acti.base.DriverScript;
+
+public class ReportsPage extends DriverScript {
 
 }

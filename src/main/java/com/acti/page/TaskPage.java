@@ -1,5 +1,7 @@
 package com.acti.page;
 
-public class TaskPage {
+import com.acti.base.DriverScript;
+
+public class TaskPage extends DriverScript {
 
 }
