@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="0" started-at="2020-11-06T20:52:24Z" finished-at="2020-11-06T20:52:24Z">
+  <suite name="Default suite" duration-ms="15872" started-at="2020-11-10T03:31:20Z" finished-at="2020-11-10T03:31:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="0" started-at="2020-11-06T20:52:24Z" finished-at="2020-11-06T20:52:24Z">
+    <test name="Default test" duration-ms="15872" started-at="2020-11-10T03:31:20Z" finished-at="2020-11-10T03:31:36Z">
+      <class name="com.acti.testcase.TC_02CreateCustomer">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.acti.testcase.TC_02CreateCustomer@59f99ea]" name="preCondition" is-config="true" duration-ms="11312" started-at="2020-11-09T22:31:20Z" finished-at="2020-11-09T22:31:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="testcreateCustomer()[pri:0, instance:com.acti.testcase.TC_02CreateCustomer@59f99ea]" name="testcreateCustomer" duration-ms="3855" started-at="2020-11-09T22:31:32Z" finished-at="2020-11-09T22:31:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcreateCustomer -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.acti.testcase.TC_02CreateCustomer@59f99ea]" name="postCondition" is-config="true" duration-ms="685" started-at="2020-11-09T22:31:36Z" finished-at="2020-11-09T22:31:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.acti.testcase.TC_02CreateCustomer -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

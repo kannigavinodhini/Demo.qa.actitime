@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.acti.base.DriverScript">
+      <class name="com.acti.testcase.TC01_LoginPageTest">
         <methods>
-          <include name="intiBrowser"/>
+          <include name="testLoginFunction"/>
+          <include name="precondition"/>
+          <include name="postcondition"/>
         </methods>
-      </class> <!-- com.acti.base.DriverScript -->
+      </class> <!-- com.acti.testcase.TC01_LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
