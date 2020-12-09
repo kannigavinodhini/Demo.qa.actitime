@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
 
 /*
  * Name:DriverScript
@@ -45,7 +46,7 @@ public class DriverScript {
 
 	// next thing we are going to create a method to open up the browser and
 	// reading fm prop file.
-	
+	@Test
 	public static void initBrowser() 
 	{
 		String browser = prop.getProperty("browser");// this is a method-
@@ -64,7 +65,7 @@ public class DriverScript {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		 launchApplication();
 		// to call the below static method we can also put the launchApplication
 		// here.

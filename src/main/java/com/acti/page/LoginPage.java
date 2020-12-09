@@ -56,3 +56,7 @@ public class LoginPage extends DriverScript  // at page object model it is
 		return driver.getTitle();
 	}
 }
+/*#41 recording
+ * 
+ *
+*/
