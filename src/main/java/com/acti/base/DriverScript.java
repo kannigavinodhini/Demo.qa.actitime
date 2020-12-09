@@ -21,6 +21,7 @@ import org.testng.annotations.Test;
  */
 
 public class DriverScript {
+	
 	public static WebDriver driver;
 	static Properties prop;// we made this Properties as a global variable
 							// because we need to use it in other places.
@@ -36,7 +37,7 @@ public class DriverScript {
 															// argument
 			prop = new Properties();   // class object
 			prop.load(fis);           // from this prop object call the method load and
-							         // give file argument.
+							         // give fis argument.
 		} catch (Exception e) {
 			System.out.println("Unable to load the file" + e.getMessage());
 
@@ -46,12 +47,13 @@ public class DriverScript {
 
 	// next thing we are going to create a method to open up the browser and
 	// reading fm prop file.
+	
 	@Test
 	public static void initBrowser() 
 	{
 		String browser = prop.getProperty("browser");// this is a method-
-														// browser is a key
-														// type.
+														// browser is a key type
+														
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "./src/test/resources/browsers/chromedriver.exe");
 			driver = new ChromeDriver();
@@ -69,7 +71,8 @@ public class DriverScript {
 		 launchApplication();
 		// to call the below static method we can also put the launchApplication
 		// here.
-		try{
+		
+		 try{
 		 Thread.sleep(3000);
 		}
 		 catch(InterruptedException e){
@@ -78,14 +81,15 @@ public class DriverScript {
 		//closeApplication();{
 		//	}
 		}
-		 public static void launchApplication()//its a static method
+		
+	public static void launchApplication()//its a static method
 		// breaking like this is called Modularization.for easy trouble shooting
 		// and maintenance
 		 {
 		String url = prop.getProperty("qaurl");
 		driver.get(url);
 		 }
-		 public static void closeApplication()//another method
+	 public static void closeApplication()//another method
 		 {
 		 driver.quit();
 	}
