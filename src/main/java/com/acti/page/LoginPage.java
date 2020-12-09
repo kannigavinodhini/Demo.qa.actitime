@@ -15,6 +15,7 @@ import com.acti.base.DriverScript;
 
 public class LoginPage extends DriverScript  // at page object model it is
 											 // recommended to use @FindBy
+                                             //@FindBy is coming from Selenium not from TestNg
 {
 	// ************WebElement/Objects***********************//
 
